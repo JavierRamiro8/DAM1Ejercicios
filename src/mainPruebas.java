@@ -50,7 +50,7 @@ public class mainPruebas {
             pruebas1 pruebame = new pruebas1();
 
             /*
-             * Los Elementos terniarios son un tipo de elemntos capaces de probar una
+             * Los Operadores terniarios son un tipo de elemntos capaces de probar una
              * cuestion y si es verdadero hace una accion y sino hace otra accion parecido a
              * un if
              */
