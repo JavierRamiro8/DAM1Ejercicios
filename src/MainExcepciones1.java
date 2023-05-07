@@ -17,26 +17,30 @@ public class MainExcepciones1 {
         int opcion=0;
         do{
         System.out.println("Elige una opcion");
-        System.out.println("1) Mostrar array");
-        System.out.println("2) ordenar array");
-        System.out.println("3) pedir columnas");
-        System.out.println("4) pedir filas");
-        System.out.println("5) Salir");
+        System.out.println("1) cargar array");
+        System.out.println("2) Mostrar array");
+        System.out.println("3) ordenar array");
+        System.out.println("4) pedir columnas");
+        System.out.println("5) pedir filas");
+        System.out.println("6) Salir");
         opcion=in.nextInt();
             switch(opcion){
                 case 1:
-                mostrarArray.mostrarArray(in,arrayBidimensional);
+                cargarArray.cargarArray(in, resultadoFilas, resultadoColumnas, arrayBidimensional);
                 break;
                 case 2:
-                ordenarArray.ordenarArray(in);
+                mostrarArray.mostrarArray(in,arrayBidimensional);
                 break;
                 case 3:
-                resultadoColumnas= pedirColumnas.pedirColumnas(in, arrayColumnas);
+                ordenarArray.ordenarArray(in);
                 break;
                 case 4:
-                resultadoFilas=pedirFilas.pedirFilas(in, arrayFilas); 
+                resultadoColumnas= pedirColumnas.pedirColumnas(in, arrayColumnas);
                 break;
                 case 5:
+                resultadoFilas=pedirFilas.pedirFilas(in, arrayFilas); 
+                break;
+                case 6:
                 System.out.println("Gracias por utilizar el programa :)");
                 break;
                 default:
